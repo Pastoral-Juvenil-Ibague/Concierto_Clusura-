@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blueviolet;
+}
+.progressbar-container {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.progressbar-container .outer-box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbar-container .inner-box {
+  background-color: white;
+  font-size: 24px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  position: absolute;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+
+  animation: loading 5s linear forwards;
+}
+
+@keyframes loading {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*rotacion imagen*/
+.app{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.img1{
+  width: 100x;
+  height: 100px;
+  border-radius: 50%;
+  animation: girar 3s infinite linear;
+  display: inline-block
+}
+
+
+@keyframes girar{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
