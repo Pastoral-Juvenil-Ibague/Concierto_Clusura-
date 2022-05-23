@@ -24,6 +24,7 @@ nav{
   height: 90px;
   width: 200px;
   margin-top: -15px;
+  margin-left: -40px;
 }
 nav ul{
   float: right;
